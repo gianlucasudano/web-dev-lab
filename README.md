@@ -21,7 +21,8 @@ To install dependencies use `npm install`
 # Usage
 The project is focused on the front-end and is connected to a JSON server that is running locally.
 
-To run the app, open your terminal and execute the command `npm run start`. Once the app has started, you should see something similar to the following.
+To run the app, open your terminal and execute the command `npm run dev`. Once the app has started, you should see something similar to the following.
+###  Runs the app `npm run dev`
 ```bash
      VITE v4.1.1  ready in 643 ms
       ➜  Local:   http://localhost:5173/
@@ -30,6 +31,8 @@ To run the app, open your terminal and execute the command `npm run start`. Once
 ```
 
 To run the json server, open a new tab in your terminal and execute the command `npm run backend`. Once the server has started, you should see something similar to the following.
+
+### Runs the server `npm run backend`
 ``` bash
      \{^_^}/ hi!
 
@@ -42,8 +45,12 @@ To run the json server, open a new tab in your terminal and execute the command 
      Home
      http://localhost:3000
 ```
-
+#
+### Navigates on the browser `http://localhost:5173/#/example`
+Once the app and the server are running, open a browser and visit this page: http://localhost:5173/#/example
+#
 To run all tests, open a new tab in your terminal and execute the command `npm run test`. Once the tests has executed, you should see something similar to the following.
+### Runs the tests `npm run test`
 ``` bash
     ✓ src/pages/Example/ErrorCard.test.tsx (1)
     ✓ src/pages/Example/AddData.test.tsx (2) 801ms
@@ -60,7 +67,6 @@ To run all tests, open a new tab in your terminal and execute the command `npm r
           press h to show help, press q to quit
 ```
 
-Once the app and the server are running, open a browser and visit this page: http://localhost:5173/#/example
 #
 ## The project utilized the following tools:
 
