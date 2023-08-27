@@ -32,7 +32,7 @@ function ErrorCard({ message }: { message: AxiosError['message'] }) {
         <Typography>Try to run this command into your terminal:</Typography>
         <Typography component="div" sx={errorCardPreCss}>
           <pre>
-            <code>npm run backend</code>
+            <code>yarn run backend</code>
           </pre>
         </Typography>
       </CardContent>
