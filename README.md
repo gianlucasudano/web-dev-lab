@@ -15,14 +15,14 @@ Download, or clone the repo in one folder and install packages.
 You can also use the repo as template, and create a new project strating from this.
 
 ```bash
-To install dependencies use `npm install`
+To install dependencies use `yarn install`
 ```
 
 # Usage
 The project is focused on the front-end and is connected to a JSON server that is running locally.
 
-To run the app, open your terminal and execute the command `npm run dev`. Once the app has started, you should see something similar to the following.
-###  Runs the app `npm run dev`
+To run the app, open your terminal and execute the command `yarn run dev`. Once the app has started, you should see something similar to the following.
+###  Runs the app `yarn run dev`
 ```bash
      VITE v4.1.1  ready in 643 ms
       ➜  Local:   http://localhost:5173/
@@ -30,9 +30,9 @@ To run the app, open your terminal and execute the command `npm run dev`. Once t
       ➜  press h to show help
 ```
 
-To run the json server, open a new tab in your terminal and execute the command `npm run backend`. Once the server has started, you should see something similar to the following.
+To run the json server, open a new tab in your terminal and execute the command `yarn run backend`. Once the server has started, you should see something similar to the following.
 
-### Runs the server `npm run backend`
+### Runs the server `yarn run backend`
 ``` bash
      \{^_^}/ hi!
 
@@ -49,8 +49,8 @@ To run the json server, open a new tab in your terminal and execute the command 
 ### Navigates on the browser `http://localhost:5173/#/example`
 Once the app and the server are running, open a browser and visit this page: http://localhost:5173/#/example
 #
-To run all tests, open a new tab in your terminal and execute the command `npm run test`. Once the tests has executed, you should see something similar to the following.
-### Runs the tests `npm run test`
+To run all tests, open a new tab in your terminal and execute the command `yarn run test`. Once the tests has executed, you should see something similar to the following.
+### Runs the tests `yarn run test`
 ``` bash
     ✓ src/pages/Example/ErrorCard.test.tsx (1)
     ✓ src/pages/Example/AddData.test.tsx (2) 801ms
@@ -79,7 +79,7 @@ To run all tests, open a new tab in your terminal and execute the command `npm r
 - "react-query": https://tanstack.com/query/latest
 - "react-hook-form": https://react-hook-form.com/
 - "testing-library": https://testing-library.com/
-- "json-server": https://www.npmjs.com/package/json-server
+- "json-server": https://www.yarnjs.com/package/json-server
 - "MUI": https://mui.com/
 
 
