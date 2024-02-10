@@ -13,7 +13,7 @@ describe('App', () => {
       screen.getByRole('heading', { name: /Hello World/i })
     ).toBeInTheDocument();
   });
-  it.skip('Renders Not Found if invalid path ', () => {
+  it('Renders Not Found if invalid path ', () => {
     // ARRANGE
     render(
       <MemoryRouter initialEntries={['/this-route-do-not-exist']}>
