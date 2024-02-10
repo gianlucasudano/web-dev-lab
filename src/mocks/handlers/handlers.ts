@@ -24,44 +24,29 @@ export const exampleNewProductMocked = {
 };
 
 // Handles a GET /example request
-export const getExampleHappyResponseHandler = http.get(
-  '/example',
-  ({}) => {
-    return HttpResponse.json(exampleGetResponseMocked)    
-  }
-);
+export const getExampleHappyResponseHandler = http.get('/example', () => {
+  return HttpResponse.json(exampleGetResponseMocked);
+});
 
 // Handles a GET /example request with an empty res
-export const getExampleEmptyResponseHandler = http.get(
-  '/example',
-  () => {
-    return HttpResponse.json([])
-  }
-);
+export const getExampleEmptyResponseHandler = http.get('/example', () => {
+  return HttpResponse.json([]);
+});
 
 // Handles a GET /example request with a failed status
-export const getExampleFailedResponseHandler = http.get(
-  '/example',
-  () => {
-    return HttpResponse.error();
-  }
-);
+export const getExampleFailedResponseHandler = http.get('/example', () => {
+  return HttpResponse.error();
+});
 
 // Handles a POST /example request
-export const postExampleHappyResponseHandler = http.post(
-  '/example',
-  () => {
-    return HttpResponse.json(exampleNewProductMocked);
-  }
-);
+export const postExampleHappyResponseHandler = http.post('/example', () => {
+  return HttpResponse.json(exampleNewProductMocked);
+});
 
 // Handles a POST /example request with a failed status
-export const postExampleFailedResponseHandler = http.post(
-  '/example',
-  () => {
-    return HttpResponse.error();
-  }
-);
+export const postExampleFailedResponseHandler = http.post('/example', () => {
+  return HttpResponse.error();
+});
 
 export const handlers = [
   getExampleHappyResponseHandler,
