@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /// <reference types="vitest" />
 /// <reference types="vite" />
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import path from 'path';
@@ -25,5 +25,13 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/setupTest.ts',
+    css: {
+      include: /.+/,
+    },
+    server: {
+      deps: {
+        inline: [/vitest-css-test-module/],
+      },
+    },
   },
 });

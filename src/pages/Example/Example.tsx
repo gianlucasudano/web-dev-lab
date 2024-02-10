@@ -1,3 +1,4 @@
+import { StackedCard } from 'web-dev-lab-components';
 import CssBaseline from '@mui/material/CssBaseline';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
@@ -14,6 +15,10 @@ function Example() {
           <AddDataForm />
           <DataDisplay />
         </Stack>
+        <StackedCard variant="outlined" draggable>
+          Pippo
+        </StackedCard>
+        <div>pippo pippo</div>
       </Container>
     </>
   );
