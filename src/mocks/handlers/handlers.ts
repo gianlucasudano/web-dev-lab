@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { rest } from 'msw';
+import { http, HttpResponse } from 'msw';
 
 export const exampleGetResponseMocked = [
   {
@@ -24,52 +24,42 @@ export const exampleNewProductMocked = {
 };
 
 // Handles a GET /example request
-export const getExampleHappyResponseHandler = rest.get(
+export const getExampleHappyResponseHandler = http.get(
   '/example',
-  (_req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(exampleGetResponseMocked));
+  ({}) => {
+    return HttpResponse.json(exampleGetResponseMocked)    
   }
 );
 
 // Handles a GET /example request with an empty res
-export const getExampleEmptyResponseHandler = rest.get(
+export const getExampleEmptyResponseHandler = http.get(
   '/example',
-  (_req, res, ctx) => {
-    return res(ctx.status(200), ctx.json([]));
+  () => {
+    return HttpResponse.json([])
   }
 );
 
 // Handles a GET /example request with a failed status
-export const getExampleFailedResponseHandler = rest.get(
+export const getExampleFailedResponseHandler = http.get(
   '/example',
-  (_req, res, ctx) => {
-    return res(
-      ctx.status(500),
-      ctx.json({
-        error: { message: 'Network Error' },
-      })
-    );
+  () => {
+    return HttpResponse.error();
   }
 );
 
 // Handles a POST /example request
-export const postExampleHappyResponseHandler = rest.post(
+export const postExampleHappyResponseHandler = http.post(
   '/example',
-  (_req, res, ctx) => {
-    return res(ctx.status(201), ctx.json(exampleNewProductMocked));
+  () => {
+    return HttpResponse.json(exampleNewProductMocked);
   }
 );
 
 // Handles a POST /example request with a failed status
-export const postExampleFailedResponseHandler = rest.post(
+export const postExampleFailedResponseHandler = http.post(
   '/example',
-  (_req, res, ctx) => {
-    return res(
-      ctx.status(500),
-      ctx.json({
-        error: { message: 'Network Error' },
-      })
-    );
+  () => {
+    return HttpResponse.error();
   }
 );
 

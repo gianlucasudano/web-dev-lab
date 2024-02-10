@@ -75,7 +75,7 @@ function AddDataForm() {
         },
         onError: (error) => {
           const { message: errorMessage } = error as AxiosError;
-          const message = `An ${errorMessage} occurred`;
+          const message = `A ${errorMessage} occurred`;
           setResultMessage({ message, severity: 'error' });
         },
         onSettled: () => {

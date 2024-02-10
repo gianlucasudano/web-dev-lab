@@ -1,5 +1,6 @@
 import { renderWithClient } from 'src/queries/utils';
 import { screen, waitFor, fireEvent } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 import userEvent from '@testing-library/user-event';
 
 import { QueryClient } from '@tanstack/react-query';
@@ -76,7 +77,7 @@ describe('AddDataForm', () => {
       expect(inputDescription).toHaveValue('');
       expect(screen.getByRole('alert')).toBeInTheDocument();
       expect(
-        screen.getByText('An Request failed with status code 500 occurred')
+        screen.getByText('A Network Error occurred')
       ).toBeInTheDocument();
     });
   });
