@@ -1,0 +1,25 @@
+@import url(./reset.css);
+@import url(./tokens.css);
+@import url(./theme.light.css);
+@import url(./colors.module.css);
+@import url(./typography.module.css);
+
+#root {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main {
+    align-content: flex-start;
+    border-radius: 5px;
+    border: 1px solid var(--md-sys-color-outline-variant);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    padding: 40px;
+}
