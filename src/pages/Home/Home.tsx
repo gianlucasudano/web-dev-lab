@@ -7,7 +7,7 @@ function Home() {
         <h1 className="display-medium">Hello World</h1>
       </header>
       <main className="surface">
-        <StackedBox variant="outlined">
+        <StackedBox variant="outlined" className="pippo pluto paperino">
           <div className="body-medium">Pippo</div>
         </StackedBox>
       </main>
