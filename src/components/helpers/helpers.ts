@@ -1,8 +1,8 @@
 /* eslint-disable import/prefer-default-export */
-type CssClass = string | undefined | '';
+type CssClass = string | undefined;
 type CssClasses = CssClass[];
 
-type CleanUpClasses = (classes: CssClasses) => string | '';
+type CleanUpClasses = (classes: CssClasses) => string;
 
 export const getCleanUpClasses: CleanUpClasses = (classes) =>
   classes
