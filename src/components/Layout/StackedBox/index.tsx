@@ -9,7 +9,7 @@ interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
   variant: BoxVariant;
 }
 
-export function StackedBox({ variant, className, ...restProps }: BoxProps) {
+function StackedBox({ variant, className, ...restProps }: BoxProps) {
   const variantClassName = variant;
 
   const cssClasses = getCleanUpClasses([styles[variantClassName], className]);

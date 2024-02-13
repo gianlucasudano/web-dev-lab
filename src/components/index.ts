@@ -1,3 +1,3 @@
-import * as StackedBox from './Layout/StackedBox';
+import StackedBox from './Layout/StackedBox';
 
 export default StackedBox;
